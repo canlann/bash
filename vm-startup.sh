@@ -10,6 +10,9 @@ do
 done
 printf "\n%s\n" "$VMNAME is online. wait 5 sec."
 printf "\n%s\n" "mounting smb share into /mnt/kvm_frappe on host."
+
+# mount command probably needs to be adjusted for new vm
 sudo mount -t cifs //$IP/marius /mnt/kvm_frappe -o uid=1000,rw,user=marius,password=Start123!
+
 printf "\n%s\n" "connecting via ssh."
 ssh marius@$IP
