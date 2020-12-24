@@ -13,7 +13,7 @@
     "git.ignoreLimitWarning": true,
     "python.jediEnabled": true,
     "python.autoComplete.extraPaths": [
-        "/home/marius/Development",
+        "${workspaceFolder}/customModule",
     ],
     "python.autoComplete.addBrackets": true,
     "terminal.integrated.fontFamily": "monospace"
