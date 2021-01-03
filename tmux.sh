@@ -4,7 +4,7 @@
 ## Check if package git is installed
 REQUIRED_PKG="git"
 PKG_OK=$(dpkg-query -W --showformat='${Status}\n' $REQUIRED_PKG|grep "install ok installed")
-echo Checking for $REQUIRED_PKG: $PKG_OK
+#echo Checking for $REQUIRED_PKG: $PKG_OK
 if [ "" = "$PKG_OK" ]; then
 	echo "No $REQUIRED_PKG. Setting up $REQUIRED_PKG."
 	sudo apt-get --yes install $REQUIRED_PKG 
@@ -19,7 +19,7 @@ fi
 
 
 # Setup session
-
+tmux source-file ~/.tmux.conf
 if ( tmux has-session -t "main" ); then
 	tmux attach -t main
 else 
