@@ -1,5 +1,25 @@
 #!/bin/sh
 
+# Install Tmux plugin manager
+## Check if package git is installed
+REQUIRED_PKG="git"
+PKG_OK=$(dpkg-query -W --showformat='${Status}\n' $REQUIRED_PKG|grep "install ok installed")
+echo Checking for $REQUIRED_PKG: $PKG_OK
+if [ "" = "$PKG_OK" ]; then
+	echo "No $REQUIRED_PKG. Setting up $REQUIRED_PKG."
+	sudo apt-get --yes install $REQUIRED_PKG 
+fi
+## Check if tmux plugin manager is installed (folder tpm exists?)
+FILE=~/.tmux/plugins/tpm
+if [ ! -d "$FILE" ]; then
+	echo "No tmux plugin manager. Setting up tmux plugin manager."
+	git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+fi
+
+
+
+# Setup session
+
 if ( tmux has-session -t "main" ); then
 	tmux attach -t main
 else 
@@ -30,6 +50,8 @@ else
 
 	tmux select-window -t main:main_window
 
+
 	# finally attach to the session
 	tmux attach -t main
+
 fi
