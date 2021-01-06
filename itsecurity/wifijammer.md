@@ -1,4 +1,5 @@
 # Source: https://github.com/DanMcInerney/wifijammer
+# Works with wireless cards capable of injection (Alfa has some good ones)
 
 ## Install python2.7
 <code>
