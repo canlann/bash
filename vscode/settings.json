@@ -13,7 +13,8 @@
     "git.ignoreLimitWarning": true,
     "python.jediEnabled": true,
     "python.autoComplete.extraPaths": [
-        "${workspaceFolder}/customModule",
+        "${workspaceFolder}/frappe",
+        "${workspaceFolder}/erpnext"
     ],
     "python.autoComplete.addBrackets": true,
     "terminal.integrated.fontFamily": "monospace"
