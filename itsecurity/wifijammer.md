@@ -37,6 +37,6 @@ sudo iwlist wlx9cefd5fbf646 scanning | egrep 'Cell |Encryption|Quality|Last beac
 ## Start deauthenticating with
 
 <code>
-sudo python2.7 wifijammer -a Address-from-List -c Channel-from-List -world
+sudo python2.7 wifijammer -a Address-from-List -c Channel-from-List --world
 </code>
 
