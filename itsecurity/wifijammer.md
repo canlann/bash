@@ -40,3 +40,6 @@ sudo iwlist wlx9cefd5fbf646 scanning | egrep 'Cell |Encryption|Quality|Last beac
 sudo python2.7 wifijammer -a Address-from-List -c Channel-from-List --world
 </code>
 
+## Optionally: Skip an MAC Address from being jammed
+Add option:
+-d -s MAC-Address
