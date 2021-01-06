@@ -16,6 +16,7 @@ if [ ! -d "$FILE" ]; then
 	git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 fi
 
+tmux source-file ~/.tmux.conf
 
 
 # Setup session
