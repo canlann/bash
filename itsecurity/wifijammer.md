@@ -1,6 +1,7 @@
 # Source: https://github.com/DanMcInerney/wifijammer
 # Works with wireless cards capable of injection (Alfa has some good ones)
-# Take care to buy one that works on 2.4 Ghz and 5 Ghz
+# Take care to buy one that works on 2.4 Ghz and 5 Ghz, if you block a lot buy long range antenna
+# Examples: https://spoilerfoiler.com/packet-injection-wireless-card-reviews/
 
 ## Install python2.7
 <code>
