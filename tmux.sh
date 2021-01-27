@@ -1,5 +1,14 @@
 #!/bin/sh
 
+
+# INSTALLATION INSTRUCTION
+# Copy this file and .tmux.conf into your user directory
+# Change the ubuntu terminal colors to:
+# [x] Custom and Text: #749CC7 Background: #2A303C
+
+
+
+
 # Install Tmux plugin manager
 ## Check if package git is installed
 REQUIRED_PKG="git"
