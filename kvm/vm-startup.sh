@@ -1,4 +1,7 @@
 #!/bin/bash
+
+# This is a custom script to startup a virt-manager vm, mount it's samba-share and connect to it once it has booted.
+
 IP="192.168.122.54"
 VMNAME="ubuntu_18.04_erpnext"
 
