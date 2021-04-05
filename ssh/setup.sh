@@ -3,8 +3,11 @@
 # Private Key Usage Instruction: Sei vorsichtig und gehe von alleine ~ Felix Gracioso Garcia
 # Copy all files from this folder into my ~/.ssh/ folder.
 # Go into the ~/.ssh/ folder change the parameter in the file setup.sh in the new location.
-# Then in the future if I want to access a remote server with my private key I need to copy the public key
-# onto the server with:
+# Run the setup.sh
+
+# Additional Information:
+# If I want to access a remote server with the private key copy the public key
+# onto the remote server with:
 # ssh-copy-id -i ~/.ssh/id_ecdsa_USGovStd_github.pub some_username@IP_ADDRESS_OF_A_SERVER 
 # Alternatively it can get imported from my github repository (not tested yet) by connecting to the target server, then
 # ssh-import-id gh:Canlann
