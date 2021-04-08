@@ -25,7 +25,7 @@ sudo systemctl enable ssh
 sudo chmod 600 ~/.ssh/*
 exec ssh-agent bash
 ssh-add id_ecdsa_USGovStd_github
-ssh-add id_ecdsa_id_ed25519_OpenSSH_tuit
+#ssh-add id_ecdsa_id_ed25519_OpenSSH_tuit
 ssh-add -l
 
 # Add public key to this host so that I can connect to it
