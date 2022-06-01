@@ -1,3 +1,0 @@
-IdentityFile ~/.ssh/id_ecdsa_USGovStd_github #My Github key
-IdentityFile ~/.ssh/id_ed25519 #My tueit GmbH key
-
